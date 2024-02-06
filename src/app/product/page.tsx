@@ -1,6 +1,7 @@
 import React from 'react'
 import { Skeleton } from '@/components/ui/skeleton'
 import { Button } from '@/components/ui/button'
+
 import Card from '../../components/Card'
 const page = () => {
 
@@ -14,7 +15,7 @@ const page = () => {
         <div className='flex flex-col gap-6'>
             <p className="text-4xl font-bold">Product Name</p>
             <p className='text-xl font-bold'> $120.00</p>
-            <p>Quantity</p>
+            <p className='text-[#7e7d7d] font-light'>Quantity:</p>
             <Button variant="secondary"> Add to Cart</Button>
         </div>
 
