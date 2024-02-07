@@ -18,7 +18,7 @@ import { SheetDemo } from '../Cart'
 
 const Navbar = () => {
   return (
-    <nav className = 'flex py-6 px-8 bg-[#ECEBEB] text-black items-center justify-between gap-2'>
+    <nav className = 'flex py-6 px-8 bg-[#ECEBEB] text-black items-center justify-between gap-2 sticky top-0 z-10'>
         <h1 className="font-[900] text-3xl"> WANDE</h1>
        
         <Command className="rounded-lg border  w-96">
