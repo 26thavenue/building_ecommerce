@@ -5,8 +5,9 @@ Change Password
 Adjust padding and text size
 Make the product page tab able
 Search functionality
-Not Found Page: Style
-Make it responsive
+[x]Not Found Page
+[x]Make it responsive
+Style the Not Found Page
 Loading screens for all pages
 Pagination
 Text box of the quantity and check for if its a number and releasea tooltip if its not

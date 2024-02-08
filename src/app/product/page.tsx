@@ -9,8 +9,11 @@ const page = () => {
   
   return (
     <div>
-        <div className='grid items-center grid-cols-2 p-6 m-6'>
-        <Skeleton className="h-[500px] w-[400px] rounded-xl" />
+        <div className='grid items-center md:grid-cols-2 p-6 m-6 gap-3'>
+        <div>
+             <Skeleton className="h-[350px] w-[300px] md:h-[500px] md:w-[400px] rounded-xl" />
+        </div>
+       
         
         <div className='flex flex-col gap-6'>
             <p className="text-4xl font-bold">Product Name</p>
