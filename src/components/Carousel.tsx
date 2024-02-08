@@ -11,7 +11,7 @@ import {
 
 export function CarouselDemo() {
   return (
-    <Carousel className="w-[80%] py-6  mx-auto my-6 ">
+    <Carousel className="w-[80%]   mx-auto my-6 container">
       <CarouselContent  className=" ">
         {Array.from({ length: 5 }).map((_, index) => (
           <CarouselItem key={index}>

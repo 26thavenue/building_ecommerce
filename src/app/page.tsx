@@ -4,11 +4,17 @@ import ShopWithUs from "@/components/ShopWithUs";
 import WhyChooseUs from "@/components/WhyChooseUs";
 export default function Home() {
   return (
-    <div className="  ">
-      <CarouselDemo />
-      <PopularDeals/>
-      <ShopWithUs/>
-      <WhyChooseUs/>
+    <div className=" max-w-fit ">
+      <div className=" w-screen">
+         {/* <CarouselDemo /> */}
+         <PopularDeals/>
+         <ShopWithUs/>
+         <WhyChooseUs/>
+      </div>
+     
+      
+      
+      
     </div>
   );
 }

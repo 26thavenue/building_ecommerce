@@ -6,6 +6,7 @@ import {
  
 } from "@/components/ui/command"
 
+import { FaUser } from "react-icons/fa";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -18,34 +19,37 @@ import { SheetDemo } from '../Cart'
 
 const Navbar = () => {
   return (
-    <nav className = 'flex py-6 px-8 bg-[#ECEBEB] text-black items-center justify-between gap-2 sticky top-0 z-10'>
-        <h1 className="font-[900] text-3xl"> WANDE</h1>
+    <nav className='w-full bg-[#ECEBEB] text-black  sticky top-0 z-10  '>
+       <div className = 'mx-auto flex  xl:px-20 py-6 px-3 md:px-8 items-center justify-between gap-2'>
+          <Link href='/' className="font-[900] text-xl md:text-3xl"> WANDE</Link>
        
-        <Command className="rounded-lg border  w-96">
+      <Command className="rounded-lg border  w-96 hidden md:block">
           <CommandInput placeholder="Search for building materials" />
           
         </Command>
         <div className="flex gap-8 cursor-pointer">
-          {/* DROPDOWN ITEM */}
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <p>Categories</p>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent className="w-56">
+           {/* DROPDOWN ITEM */} 
+           <DropdownMenu>
+             <DropdownMenuTrigger asChild>
+               <p className="text-[12px] md:text-sm">Categories</p>
+             </DropdownMenuTrigger>
+             <DropdownMenuContent className="w-56">
               
-              <DropdownMenuItem>No categories yet</DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
-          {/* DROPDOWN ITEM */}
-          <div className="flex gap-2">
-            <SheetDemo/>
-            {/* <p className="font-[10px]"> 0</p> */}
-          </div>
+               <DropdownMenuItem>No categories yet</DropdownMenuItem>
+             </DropdownMenuContent>
+           </DropdownMenu>
+           {/* DROPDOWN ITEM */}
+           <div className="flex items-center gap-2">
+             <SheetDemo/>
+             {/* <p className="font-[10px]"> 0</p> */}
+           </div>
           
-          <Link href='/login'> Login </Link>
-          <Link href='/signup'> Signup </Link>
+           <Link href='/login' className="hidden md:block text-sm hover:underline transition-all 700ms "> Login </Link>
+           <Link href='/signup' className="hidden md:block text-sm hover:underline transition-all 700ms"> Signup </Link>
+           <p className='flex items-center md:hidden'><FaUser className=""/></p>
           
-        </div>
+         </div>
+         </div>
     </nav>
   )
 }

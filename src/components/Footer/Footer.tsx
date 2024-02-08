@@ -2,34 +2,40 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='bg-black w-full grid grid-cols-4 justify-center items-center text-white p-16'>
-        <div>
+    // <div className='bg-black  w-screen grid gap-12 md:grid-cols-4 justify-center items-center text-white p-3 md:p-16'>
+        
+
+    // // </div>
+    <footer className='container bg-black w-full text-white h-full '>
+        
+          <div  className='hidden md:block'>
             <h1 className='text-4xl '>WANDE</h1>
         </div>
-        <div className=''>
-            <p className='text-[18px] font-medium'>Account</p>
-            <p>Login</p>
-            <p>Signup</p> 
-            <p>Forgot Password</p>
-            <p>Cart</p>
+        <div className='px-6 my-6'>
+            <p className='text-lg font-medium mb-3'>Account</p>
+            <p className='text-sm font-light' >Login</p>
+            <p className='text-sm font-light' >Signup</p> 
+            <p className='text-sm font-light' >Forgot Password</p>
+            <p className='text-sm font-light' >Cart</p>
         </div>
-        <div className=''>
-            <p className='text-[18px] font-medium'>Category</p>
-            <p>Fittings</p>
-            <p>Florrings</p>
-            <p>Kitchen</p>
-            <p>Showers&Faucets </p>
+        <div className='px-6 my-6'>
+            <p className='text-lg font-medium mb-3'>Category</p>
+            <p className='text-sm font-light' >Fittings</p>
+            <p className='text-sm font-light' >Florrings</p>
+            <p className='text-sm font-light' >Kitchen</p>
+            <p className='text-sm font-light' >Showers&Faucets </p>
         </div>
-        <div className=''>
-            <p className='text-[18px] font-medium'>Contact Us</p>
-            <p>Facebook</p>
-            <p>Telegram</p>
-            <p>Number : +233555777444</p>
-            <p>Email: abi@gmail.com</p>
+        <div className='px-6 my-6'>
+            <p className='text-lg font-medium mb-3'>Contact Us</p>
+            <p className='text-sm font-light' >Facebook</p>
+            <p className='text-sm font-light' >Telegram</p>
+            <p className='text-sm font-light' >Number : +233555777444</p>
+            <p className='text-sm font-light' >Email: abi@gmail.com</p>
         </div>
         
 
-    </div>
+        
+    </footer>
   )
 }
 

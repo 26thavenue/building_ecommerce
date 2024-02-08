@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
+import { FiShoppingCart } from "react-icons/fi";
 import {
   Sheet,
   SheetClose,
@@ -16,14 +17,14 @@ export function SheetDemo() {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <p>Cart</p>
+        <p><FiShoppingCart/></p>
       </SheetTrigger>
       <SheetContent>
         <SheetHeader>
           <SheetTitle> YOUR CART</SheetTitle>
         </SheetHeader>
-        <div className="flex flex-col gap-6">
-          <p>There are no items in your catr</p>
+        <div className="flex flex-col gap-6 mb-3">
+          <p className="mb-2">There are no items in your cart</p>
           <p>SUBTOTAL : </p>
         </div>
         
