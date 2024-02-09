@@ -13,11 +13,12 @@ datasource db {
 model Product{
   id        String      @id @default(uuid())
   name      String
-  price     Float
+  price     Int
   description String
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
   imageUrl String
+  review Review[]
   CartItem    CartItem[]
   @@map("products")
 }
@@ -51,7 +52,17 @@ model User {
   emailVerified DateTime?
   image         String?
   Cart          Cart[]
+  Review        Review[]
 
   @@map("users")
+}
+
+model Review{
+  id Int @id @default(autoincrement())
+  text String
+  product   Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+  productId String
+  userId String
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
 
