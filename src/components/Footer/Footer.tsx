@@ -1,12 +1,16 @@
+"use client"
+
 import React from 'react'
+
+
 
 const Footer = () => {
   return (
     // <div className='bg-black  w-screen grid gap-12 md:grid-cols-4 justify-center items-center text-white p-3 md:p-16'>
-        
+
 
     // // </div>
-    <footer className='container bg-black w-full text-white h-full '>
+    <footer className='container md:grid md:grid-cols-4 gap-3 items-center md:p-8 bg-black w-full text-white h-full '>
         
           <div  className='hidden md:block'>
             <h1 className='text-4xl '>WANDE</h1>
