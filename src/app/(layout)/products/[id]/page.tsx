@@ -1,8 +1,30 @@
+import prisma from '@/lib/prisma'
+import { Metadata } from "next";
+import Image from "next/image";
+import { notFound } from "next/navigation";
+import { cache } from "react";
 import React from 'react'
 import { Skeleton } from '@/components/ui/skeleton'
 import { Button } from '@/components/ui/button'
+import { Card } from '@/components/ui/card'
 
-import Card from '../../components/Card'
+interface ProductPageProps {
+  params: {
+    id: string;
+  };
+}
+const getProduct = cache(async (id: string) => {
+  const product = await prisma.product.findUnique({ where: { id } });
+  if (!product) notFound();
+  return product;
+});
+
+export async function getStaticProps({ params }: ProductPageProps) {
+  const product = await getProduct(params.id);
+  return { props: { product } };
+}
+
+
 const page = () => {
 
   const cardArray = Array.from({ length: 4 }, (_, index) => index);

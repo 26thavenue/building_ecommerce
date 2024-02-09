@@ -5,6 +5,7 @@ Change Password
 Adjust padding and text size
 Make the product page tab able
 Search functionality
+Make a field for importation of image 
 [x]Not Found Page
 [x]Make it responsive
 Loading screens for all pages
