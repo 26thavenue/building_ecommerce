@@ -7,12 +7,12 @@ Make the product page tab able
 Search functionality
 [x]Not Found Page
 [x]Make it responsive
-Style the Not Found Page
 Loading screens for all pages
-Pagination
+[x]Login and Signup
+[x] Re-design the 404 page
 Text box of the quantity and check for if its a number and releasea tooltip if its not
 Automate excel sheets to add category
-Remove footer and header from admin and checkout page
+[x]Remove footer and header from admin and checkout page
 
 Check:
 import { useOptimistic } from 'react'
