@@ -21,7 +21,7 @@ import { SheetDemo } from '../Cart'
 
 const Navbar = () => {
   return (
-    <nav className='w-full bg-white text-black  sticky top-0 z-10  '>
+    <nav className='w-full bg-white shadow-sm text-black  sticky top-0 z-10  '>
        <div className = 'mx-auto flex  xl:px-20 py-6 px-3 md:px-8 items-center justify-between gap-2'>
           <Link href='/' className="font-[900] text-xl md:text-3xl"> WANDE</Link>
        
